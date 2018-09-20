@@ -53,6 +53,12 @@ function displayQuote (){
 
 
 let number = Math.floor(Math.random()*quotes.length);
-console.log(number);
+//lets me see if the script is working in dev tools
+//console.log(number);
+
+//author of quote
+quoteAuthor.innerHTML = quotes[number].name;
+//quote its self
+quote.innerHTML = quotes[number].quote;
 
 }
